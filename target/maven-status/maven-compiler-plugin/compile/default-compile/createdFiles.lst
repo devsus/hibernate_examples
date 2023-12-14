@@ -1,0 +1,8 @@
+com\hibernate\crud\operation\IStudentDao.class
+com\hibernate\crud\operation\Student.class
+in\codelearn\common\Main.class
+in\codelearn\persistence\HibernateUtil.class
+com\hibernate\crud\operation\StudentDao.class
+in\codelearn\model\Employee.class
+in\codelearn\model\EmployeeDetail.class
+in\codelearn\model\Student.class
