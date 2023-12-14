@@ -21,6 +21,9 @@
  		<mapping class="in.codelearn.model.EmployeeDetail"/>
  		<mapping class="in.codelearn.model.Employee"/>
  		<mapping class="com.hibernate.crud.operation.Student"/>
+ 		
+ 		<mapping class="com.manytomany.Employeem"/>
+ 		<mapping class="com.manytomany.Project"/>
  		 
     </session-factory>
 </hibernate-configuration>
