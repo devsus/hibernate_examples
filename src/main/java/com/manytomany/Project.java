@@ -4,7 +4,7 @@ import java.util.Set;
 
 import javax.persistence.*;
 @Entity
-@Table(name = "projects")
+@Table(name = "projects_many_to_many")
 public class Project {
 
  private static final long serialVersionUID = 1L;

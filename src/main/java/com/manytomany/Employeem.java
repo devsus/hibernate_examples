@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name = "employees")
+@Table(name = "employee_many_to_many")
 public class Employeem {
 
     private static final long serialVersionUID = 1L;
@@ -24,7 +24,7 @@ public class Employeem {
 
     @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(
-        name = "employees_projects",
+        name = "employees_projects", // it will create new table
         joinColumns = {
             @JoinColumn(name = "employee_id")
         },
