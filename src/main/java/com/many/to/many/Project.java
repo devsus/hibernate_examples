@@ -1,10 +1,10 @@
-package com.manytomany;
+package com.many.to.many;
 import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.*;
 @Entity
-@Table(name = "projects_many_to_many")
+@Table(name = "project1001")
 public class Project {
 
  private static final long serialVersionUID = 1L;
@@ -18,7 +18,7 @@ public class Project {
     private String title;
 
     @ManyToMany(mappedBy = "projects", cascade = { CascadeType.ALL })
-    private Set<Employeem> employees = new HashSet<Employeem>();
+    private Set<Employee> employees = new HashSet<Employee>();
     
     public Project() {
         super();
@@ -44,11 +44,11 @@ public class Project {
         this.title = title;
     }
 
-    public Set<Employeem> getEmployees() {
+    public Set<Employee> getEmployees() {
         return employees;
     }
 
-    public void setEmployees(Set<Employeem> employees) {
+    public void setEmployees(Set<Employee> employees) {
         this.employees = employees;
     }
 }

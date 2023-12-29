@@ -1,4 +1,4 @@
-package com.manytomany;
+package com.many.to.many;
 
 import org.hibernate.Session;
 
@@ -11,7 +11,7 @@ public class ManyToManyMainApp {
         session.beginTransaction();
 
         // Create an employee
-        Employeem employee = new Employeem();
+        Employee employee = new Employee();
         employee.setFirstName("Ramesh");
         employee.setLastName("Fadatare");
 

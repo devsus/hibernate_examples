@@ -1,13 +1,13 @@
-package com.manytomany;
+package com.many.to.many;
 
 import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.*;
 
 
-@Entity
-@Table(name = "employee_many_to_many")
-public class Employeem {
+@Entity(name = "com.many.to.many.Employee")
+@Table(name = "emp1001")
+public class Employee {
 
     private static final long serialVersionUID = 1L;
 
@@ -33,16 +33,16 @@ public class Employeem {
         }
     )
     Set<Project> projects = new HashSet<Project> ();
-    public Employeem() {
+    public Employee() {
         super();
     }
 
-    public Employeem(String firstName, String lastName) {
+    public Employee(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
-    public Employeem(String firstName, String lastName, Set < Project > projects) {
+    public Employee(String firstName, String lastName, Set < Project > projects) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.projects = projects;
